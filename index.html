@@ -1,0 +1,164 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>notesGriha</title>
+</head>
+<style>
+
+
+
+    #nav-placeholder{
+        height: 100px;
+        width: 100%;
+    }
+
+
+    footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px 0;
+   background-color: aliceblue;
+   margin-top: 10px;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-media img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+footer p {
+   font-size: 14px;
+   color: #6c757d;
+}
+/* 
+.dark-mode {
+   
+   display: inline;
+   padding: 0;
+   margin: 0;
+   height: 10px;
+}
+
+   
+.dark{
+    height: 10px;
+    margin-left: 750px;
+    margin-top: 0px;
+} */
+
+</style>
+<body>
+
+    <header>
+        <div id="nav-placeholder">
+        </div>
+    </header>
+
+    <!-- <div class="dark">
+    <button  style="background-color: black;color: white; margin-bottom: 700px; margin-left: 700px;" onclick="darkMode()">Dark Mode</button>
+        </div> -->
+
+
+    <!-- <iframe sandbox="allow-top-navigation"></iframe> -->
+
+    <main>
+
+    <div id = "intro">
+        <h3>START TO NEW JOURNEY</h3>
+
+        <p>Best Learning <br>Platform To Prepare <br>Semester Exam</p>
+
+    </div>
+
+     <div id="note">
+        <p>Semester's Note</p>
+
+        <div class="row">
+            <a href="./bitFirst/firstSem.html" class="block">1st Semester</a>
+            <a href="./bitSecond/secondSem.html" class="block">2nd Semester</a>
+            <a href="./bitThird/thirdSem.html" class="block">3rd Semester</a>
+            <a href="./bitFourth/fourthSem.html" class="block">4th Semester</a>
+        </div>
+    
+        <div class="row">
+            <a href="./subject/fifthsem.html" class="block">5th Semester</a>
+            <a href="./bitSixth/sixthSem.html" class="block">6th Semester</a>
+            <a href="./bitSeventh/seventhSem.html" class="block">7th Semester</a>
+            <a href="./bitEight/eightSem.html" class="block">8th Semester</a>
+        </div>
+
+    </div>
+
+    <div id="why">
+        <h2>Contribute on NotesGriha</h2>
+        <p>Contribute on NotesGriha and helps the begineer to find out <br> the notes, question bank and solutions.</p>
+
+        <button><a href="contribute.html">Contribute</a></button>
+
+    </div>
+
+
+</main>
+
+    <footer>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/anil-ghale-873579237/"> <img src="./images/linkedin.png" alt="LinkedIn Icon" ></a>
+          
+          <a href="https://www.facebook.com/profile.php?id=100076575400595"><img src="./images/facebook.png" alt="Facebook Icon"> </a>
+          
+            <a href="https://www.instagram.com/aniel_ghale/"> <img src="./images/instagram.png" alt="Instagram Icon"></a>
+            
+           <a href="https://github.com/anilghale1"><img src="./images/github.png" alt="GitHub Icon"></a>
+        </div>
+        <p>&copy; Bit 2023</p>
+     </footer>
+     
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script>
+       
+fetch('./navBar/navbar.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+        // Load navScript.js after jQuery is loaded
+        loadScript('https://code.jquery.com/jquery-3.6.4.min.js', function () {
+            loadScript('./navBar/navScript.js');
+        });
+    });
+
+function loadScript(src, callback) {
+    const script = document.createElement('script');
+    script.src = src;
+    script.onload = callback;
+    document.body.appendChild(script);
+}
+
+function darkMode() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+
+    </script>
+
+<script src="./navBar/navScript.js"></script>
+
+
+    
+    
+</body>
+</html>
