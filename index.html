@@ -1,144 +1,202 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">  
-
-    <link rel="stylesheet" href="./style.css">
-
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
-<style>
-
-
-
-    #nav-placeholder{
-        height: 100px;
-        width: 100%;
-    }
-
-
-    footer {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding: 20px 0;
-   background-color: aliceblue;
-   margin-top: 10px;
-}
-
-.social-media img {
-  width: 30px;
-  height: 30px;
-  margin: 0 10px;
-  transition: all 0.3s ease-in-out;
-}
-
-.social-media img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
-
-footer p {
-   font-size: 14px;
-   color: #6c757d;
-}
-
-
-</style>
 <body>
-
-    <header>
-        <div id="nav-placeholder">
-        </div>
-    </header>
-
-   
-    <main>
-
-    <div id = "intro">
-        <h3>START TO NEW JOURNEY</h3>
-
-        <p>Best Learning <br>Platform To Prepare <br>Semester Exam</p>
-
-    </div>
-
-     <div id="note">
-        <p>Semester's Note</p>
-
-        <div class="row">
-            <a href="./bitFirst/firstSem.html" class="block">1st Semester</a>
-            <a href="./bitSecond/secondSem.html" class="block">2nd Semester</a>
-            <a href="./bitThird/thirdSem.html" class="block">3rd Semester</a>
-            <a href="./bitFourth/fourthSem.html" class="block">4th Semester</a>
-        </div>
-    
-        <div class="row">
-            <a href="./subject/fifthsem.html" class="block">5th Semester</a>
-            <a href="./bitSixth/sixthSem.html" class="block">6th Semester</a>
-            <a href="./bitSeventh/seventhSem.html" class="block">7th Semester</a>
-            <a href="./bitEight/eightSem.html" class="block">8th Semester</a>
-        </div>
-
-    </div>
-
-    <div id="why">
-        <h2>Contribute on NotesGriha</h2>
-        <p>Contribute on NotesGriha and helps the begineer to find out <br> the notes, question bank and solutions.</p>
-
-        <button><a href="contribute.html">Contribute</a></button>
-
-    </div>
-
-
-</main>
-
-    <footer>
-        <div class="social-media">
-          <a href="https://www.linkedin.com/in/anil-ghale-873579237/"> <img src="./images/linkedin.png" alt="LinkedIn Icon" ></a>
-          
-          <a href="https://www.facebook.com/profile.php?id=100076575400595"><img src="./images/facebook.png" alt="Facebook Icon"> </a>
-          
-            <a href="https://www.instagram.com/aniel_ghale/"> <img src="./images/instagram.png" alt="Instagram Icon"></a>
+ <div class="main">
+        <nav>
+            <span><img width="53"  src="assets/images/logo.svg" alt=""></span>
             
-           <a href="https://github.com/anilghale1"><img src="./images/github.png" alt="GitHub Icon"></a>
+            <div >
+                <!-- <button class="btn">English</button> -->
+                <button class="btn btn-red-sm">Sign In</button>
+            </div>
+        </nav>
+
+            <div class="box">
+            </div>
+
+                <div class="hero">
+                    <span>Unlimited movies, TV shows, and more </span>
+                    <span>Watch anywhere. Cancel anytime.</span>
+                    <span>Ready to watch? Enter your email to create or restart your membership.</span>
+                   <div>
+                    <input type="text" placeholder="Email Address">
+                    <button class="btn btn-red">Get Started ></button>
+                   </div>
+
+                </div>
+   </div>
+   <div class="seperation"></div>
+   
+   <section class="enjoy">  
+    <div>
+        <span>Enjoy on your TV</span><br>
+        <span>Watch on Smart TVs, Playstation, Xbox, Chromecast</span>
+        <span>Apple TV, Blu-ray players, and more</span>
+          </div>
+    
+    <div class="tv-container">
+    <img src="assets/images/tv.png" alt="" />
+
+    <video class="tv-video" autoplay muted loop>
+        <!-- Add your video source here -->
+        <source src="assets/videos/video1.m4v" type="video/mp4">
+    </div>
+  </div>
+</section>
+
+  
+
+   <div class="seperation"></div>
+
+   <section class="enjoy second"> 
+    
+    <div class="tv-container">
+        <img src="assets/images/mobile.jpg" alt="" />
         </div>
-        <p>&copy; Bit 2023</p>
-     </footer>
-     
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <div>
+        <span>Download your shows to</span>
+        <span>watch offline</span>
+        <span>Save your favorites easily and always have</span>
+        <span>something to watch.</span>
+          </div>
+    
+   
+  </div>
+</section>
 
-    <script>
+  
+
+   <div class="seperation"></div>
+
+
+   <section class="enjoy third"> 
+    
+    
+    <div>
+        <span>Watch</span>
+        <span>everywhere</span>
+        <span>Stream unlimited movies and TV </span>
+        <span>shows on your phone, tablet, laptop,</span>
+        <span>and TV.</span>
+          </div>
+        
+          <div class="tv-container">
+            <img src="assets/images/tv.png" alt="" />
+        
+            <video class="tv-video" autoplay muted loop>
+                <!-- Add your video source here -->
+                <source src="assets/videos/video1.m4v" type="video/mp4">
+            </div>
+   
+  </div>
+</section>
+
+  
+
+   <div class="seperation"></div>
+
+   <section class="enjoy fourth"> 
+    
+    <div class="tv-container">
+        <img src="assets/images/kid.png" alt="" />
+        </div>
+    <div>
+        <span>Create profiles for kids</span>
+        <span>Send kids on adventures with their favorite</span>
+        <span>characters in a space made just for them—free with</span>
+        <span>your membership.</span>
        
-fetch('./navBar/navbar.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('nav-placeholder').innerHTML = data;
-        // Load navScript.js after jQuery is loaded
-        loadScript('https://code.jquery.com/jquery-3.6.4.min.js', function () {
-            loadScript('./navBar/navScript.js');
-        });
-    });
-
-function loadScript(src, callback) {
-    const script = document.createElement('script');
-    script.src = src;
-    script.onload = callback;
-    document.body.appendChild(script);
-}
-
-function darkMode() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-
-    </script>
-
-<script src="./navBar/navScript.js"></script>
-
-
+          </div>
     
-    
+   
+  </div>
+</section>
+
+
+   <div class="seperation"></div>
+
+
+   <section class="faq">
+    <h2>Frequently Asked Question</h2>
+
+    <div class="faqbox">
+    <span>What is Netflix</span>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+</div>
+
+<div class="faqbox">
+    <span>How much does Netflix cost?</span>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+
+</div>
+<div class="faqbox">
+    <span>What can I watch on Netflix?</span>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+
+</div>
+<div class="faqbox">
+    <span>Where can I watch?</span>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+
+
+   </section>
+
+   <div class="seperation"></div>
+
+
+   <footer>
+    <div class="questions">
+        Questions? Call 000-800-919-1694
+    </div>
+    <div class="footer">
+        <div class="footer-item"> 
+            <a href="faq">Investor Relations</a>
+            <a href="faq">Jobs</a>
+            <a href="faq">Ways to Watch</a>
+            <a href="faq">Terms of Use</a>
+        </div>
+
+        <div class="footer-item"> 
+            <a href="faq">Help Centre</a>
+            <a href="faq">Account</a>
+            <a href="faq">Speed Test</a>
+            <a href="faq">Legal Notices</a>
+        </div>
+        <div class="footer-item">
+            <a href="faq">Media Centre</a>
+            <a href="faq">Privacy</a>
+            <a href="faq">Cookie Preferences</a> 
+            <a href="faq">Corporate</a>
+        </div>
+
+        <div class="footer-item">
+            <a href="faq">Contact Us</a>
+            <a href="faq">Speed Test</a> 
+            <a href="faq">Legal Notices</a> 
+            <a href="faq">Only on Netflix</a>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
