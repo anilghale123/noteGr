@@ -12,8 +12,8 @@
   #intro {
     height: 21rem;
     width: auto;
-    background-color: whitesmoke;
-    margin-bottom: 10px;
+    background-color: aliceblue;
+    /* margin-bottom: 10px; */
     margin-top: -30px;
    
   }
@@ -47,7 +47,7 @@
     text-align: center;
     margin-top: 0rem;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
   }
   
   .row {
@@ -97,37 +97,27 @@
   }
 }
 
-@keyframes colorChange {
-  from {
-    background-color: red;
-  }
-  to {
-    background-color: whitesmoke;
-  }
-}
   
-  /* Assign different background colors to each block /
-  .block:nth-child(1) {
-    background-color: whitesmoke; / Blue */
-  
+ 
   
   .block:nth-child(2) {
-    background-color: whitesmoke; /* Red */
+    background-color: aliceblue; /* Red */
   }
   
   .block:nth-child(3) {
-    background-color: whitesmoke; /* Green */
+    background-color: aliceblue; /* Green */
   }
   
   .block:nth-child(4) {
-    background-color: whitesmoke; /* Orange */
+    background-color: aliceblue; /* Orange */
   }
   
   #why {
     height: 20rem;
     width: 100%;
-    margin-top: 1rem;
-    background-color: whitesmoke;
+    /* margin-top: 1rem; */
+    background-color: aliceblue;
+    margin-bottom: -3rem;
   }
   
   #why h2 {
@@ -146,7 +136,7 @@
   #why button {
     height: 4rem;
     width: 13rem;
-    background-color: whitesmoke;
+    background-color: aliceblue;
     margin-left: 9rem;
   }
   
@@ -163,9 +153,9 @@
   }
   
   #footer {
-    background-color: whitesmoke;
+    background-color: aliceblue;
     height: 6rem;
-    margin-top: 1rem;
+    /* margin-top: -3rem; */
     
   }
   #footer p {
@@ -173,7 +163,7 @@
     text-align: center;
     font-weight: bold;
     font-size: 2rem;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
   }
 
   
