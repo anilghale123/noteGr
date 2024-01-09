@@ -22,6 +22,7 @@ html{
 .sub {
     display: flex;
     justify-content: space-between;
+
     margin-bottom: 2rem;
     padding-top: 0.5rem;
     margin-top: 2rem;
@@ -58,24 +59,22 @@ html{
 }
 
 
+@media screen and (min-width: 500px) and (max-width: 1500px) {
+  html {
+    font-size: 70%;
+  }
+  #subjects{
+    height: 80rem;
 
-@media (max-width: 1104px) {
-    html {
-      font-size: 65%;
-    }
   }
-  
-  @media (max-width: 991px) {
-    html {
-      font-size: 55%;
-    }
+  .sub{
+    display: flex;
+    justify-content: space-around;
   }
-  
-  @media (max-width: 947px) {
-    html {
-      font-size: 45%;
-    }
-  }
+}
+
+
+
   
   @media (max-width: 690px) {
     html {
