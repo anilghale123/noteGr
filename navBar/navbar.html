@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    .max-width {
+        max-width: 1300px;
+        padding: 0 80px;
+        margin: auto;
+    }
+
+    .navbar {
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        z-index: 999;
+        padding: 30px 0;
+        transition: all 0.3s ease;
+        background-color: white;
+        line-height: 20px;
+        border-bottom: 4px solid black;
+    }
+
+    .navbar.sticky {
+        padding: 15px 0;
+        background: white;
+        border-bottom: 5px solid crimson;
+    }
+
+    .navbar .max-width {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar .logo a {
+        color: black;
+        font-size: 35px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .navbar .menu {
+    align-items: center;
+    margin-right: 200px;
+    background-color: white; /* Add a background color to the menu for better visibility */
+    z-index: 998; /* Adjust the z-index to make sure it's below .menu-btn */
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.navbar .menu li a:hover {
+    color: red;
+}
+
+    .navbar.sticky .menu li a:hover {
+        color: red;
+    }
+
+    /* menu btn styling */
+    .menu-btn {
+        color: #fff;
+        font-size: 23px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .scroll-up-btn {
+        position: fixed;
+        height: 45px;
+        width: 42px;
+        background: black;
+        right: 30px;
+        bottom: 10px;
+        text-align: center;
+        line-height: 45px;
+        color: #fff;
+        z-index: 9999;
+        font-size: 30px;
+        border-radius: 6px;
+        border-bottom-width: 2px;
+        cursor: pointer;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+
+    .scroll-up-btn.show {
+        bottom: 30px;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .scroll-up-btn:hover {
+        filter: brightness(90%);
+    }
+
+    @media (min-width: 948px) {
+        .menu-btn {
+            display: none;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .max-width {
+            padding: 0 50px;
+        }
+
+        .navbar .menu {
+            margin-right: 0; /* Remove right margin for better spacing */
+        }
+
+        .navbar .menu li {
+            margin-right: 0; /* Remove right margin for better spacing */
+        }
+    }
+
+    @media (max-width: 947px) {
+        .menu-btn {
+        display: block;
+        z-index: 999;
+        color: black; /* Set color to match the background for better visibility */
+    }
+
+        .menu-btn i.active:before {
+            content: "\f00d";
+            color: white;
+        }
+
+        .navbar .menu {
+            position: fixed;
+            height: 100vh;
+            width: 100%;
+            left: -100%;
+            top: 0;
+            background: black;
+            text-align: center;
+            padding-top: 80px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar .menu.active {
+            left: 0;
+        }
+
+        .navbar .menu li {
+            display: block;
+        }
+
+        .navbar .menu li a {
+            display: inline-block;
+            margin: 20px 0;
+            font-size: 25px;
+            color: white;
+        }
+
+        .max-width {
+            max-width: 930px;
+        }
+    }
+
+    @media (max-width: 690px) {
+        .max-width {
+            padding: 0 23px;
+        }
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="../index.html">NotesGriha</a></div>
+            <ul class="menu">
+                <li><a id="home-link" href="../index.html" class="menu-btn" target="_top">Home</a></li>
+                <li><a href="#about" class="menu-btn">Semester</a></li>
+                <li><a href="#services" class="menu-btn">Question</a></li>
+                <li><a href="#skills" class="menu-btn">Entrance</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="../navBar/navScript.js"></script>
+
+    
+
+    </body>
+    </html>

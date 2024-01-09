@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../subject/subject.css">
+    <title>Document</title>
+    
+</head>
+<style>
+    #nav-placeholder{
+        height: 100px;
+        width: 100%;
+    }
+</style>
+<body>
+    <header>
+    <div id="nav-placeholder"></div> 
+</header>
+
+<main>
+    <div id="subject">
+        <h3>Subject</h3>
+
+        <h2>Technical Communication</h2>
+
+        <p>"Develop effective communication skills for conveying technical information."</p>
+        <br>
+        <p>"Learn to create clear and concise technical documents, reports, and presentations."</p>
+        <br>
+        <p>"Understand the importance of audience analysis and adapt communication strategies for different stakeholders."</p>
+    
+    </div>
+
+    <iframe src="../navBar/subNav.html" frameborder="0" width="100%" height="1200px" style="margin-bottom: 100px;"></iframe>
+</main>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script>
+        
+fetch('../navBar/navbar.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+        // Load navScript.js after jQuery is loaded
+        loadScript('https://code.jquery.com/jquery-3.6.4.min.js', function () {
+            loadScript('../navBar/navScript.js');
+        });
+    });
+
+function loadScript(src, callback) {
+    const script = document.createElement('script');
+    script.src = src;
+    script.onload = callback;
+    document.body.appendChild(script);
+}
+
+    </script>
+
+<script src="../navBar/navScript.js"></script>
+
+</body>
+</html>

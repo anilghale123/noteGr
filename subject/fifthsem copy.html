@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../subject/semester.css">
+    <title>Document</title>
+</head>
+<style>
+    #nav-placeholder{
+        height: 100px;
+        width: 100%;
+    }
+
+    footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px 0;
+   background-color: aliceblue;
+   margin-top: 10px;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-media img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+footer p {
+   font-size: 14px;
+   color: #6c757d;
+}
+    
+</style>
+<body>
+    <div id="nav-placeholder"></div> 
+    <div id="subjects">
+        <p>Subjects</p>
+    <div class="sub">
+        <a href="../subject/iot.html" class="block" onclick="localStorage.setItem('subject', 'iot');">Internet Of Things</a> 
+       
+        <a href="../subject/computerGraphics.html" class="block" onclick="localStorage.setItem('subject', 'computerGraphics');">Computer Graphics</a>  
+    </div>
+   
+
+    <div class="sub">
+        <a href="../subject/webTech.html" class="block" onclick="localStorage.setItem('subject', 'webTech');">Web Technology</a>
+  
+        <a href="../subject/researchMethodology.html" class="block" onclick="localStorage.setItem('subject', 'researchMethodology');">Research Methodology</a>
+    
+    </div>
+
+    <div class="sub">
+        <a href="../subject/computerNetwork.html" class="block" onclick="localStorage.setItem('subject', 'computerNetwork');">Computer Network</a>
+        <a href="" class="block">Projects</a>
+
+    </div>
+    </div>
+
+
+    <footer>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/anil-ghale-873579237/"> <img src="linkedin.png" alt="LinkedIn Icon" ></a>
+          
+          <a href="https://www.facebook.com/profile.php?id=100076575400595"><img src="facebook.png" alt="Facebook Icon"> </a>
+          
+            <a href="https://www.instagram.com/aniel_ghale/"> <img src="instagram.png" alt="Instagram Icon"></a>
+            
+           <a href="https://github.com/anilghale1"><img src="github.png" alt="GitHub Icon"></a>
+        </div>
+        <p>&copy; Bit 2023</p>
+     </footer>
+     
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script>
+       
+        fetch('../navBar/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+                // Load navScript.js after jQuery is loaded
+                loadScript('https://code.jquery.com/jquery-3.6.4.min.js', function () {
+                    loadScript('../navBar/navScript.js');
+                });
+            });
+        
+        function loadScript(src, callback) {
+            const script = document.createElement('script');
+            script.src = src;
+            script.onload = callback;
+            document.body.appendChild(script);
+        }
+        
+            </script>
+      
+
+<script src="../navBar/navScript.js"></script>
+
+    
+
+</body>
+</html>
