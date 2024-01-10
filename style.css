@@ -14,7 +14,7 @@ body {
   width: auto;
   background-color: whitesmoke;
   margin-bottom: 5px;
-  margin-top: -35px;
+  margin-top: -25px;
  
 }
 
@@ -180,17 +180,17 @@ to {
 
 
 
-@media (max-width: 1104px) {
+@media screen and (min-width: 500px) and (max-width: 1500px) {
   html {
-    font-size: 65%;
+    font-size: 70%;
   }
+.dark-mode header .navbar{
+  background-color: black;
+  border-bottom: 4px solid white;
+
+}
 }
 
-@media (max-width: 991px) {
-  html {
-    font-size: 55%;
-  }
-}
 
 @media (max-width: 947px) {
   html {
