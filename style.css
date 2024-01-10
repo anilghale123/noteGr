@@ -1,237 +1,260 @@
 * {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-  }
-  html {
-    font-size: 62.5%;
-  }
-  body {
-   
-    height: 100vh; /* Set body height to 100% of the viewport height */
-  }
-  #intro {
-    height: 21rem;
-    width: auto;
-    background-color: aliceblue;
-    /* margin-bottom: 10px; */
-    margin-top: -30px;
-   
-  }
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+ 
+  height: 100vh; /* Set body height to 100% of the viewport height */
+}
+#intro {
+  height: 21rem;
+  width: auto;
+  background-color: whitesmoke;
+  margin-bottom: 10px;
+  margin-top: -30px;
+ 
+}
+
+#intro h3 {
+  margin-left: 10rem;
+  padding-top: 3rem;
+  color: black;
+}
+
+#intro p {
+  margin-top: 0rem;
+  margin-left: 10rem;
+  font-size: 4rem;
+  padding-top: 0;
+  font-weight: bold;
+}
+
+#note {
   
-  #intro h3 {
-    margin-left: 10rem;
-    padding-top: 3rem;
-    color: black;
-  }
+  width: auto;
+  background-color: aliceblue;
+  padding-bottom: 0px;
+  height: 35rem;
   
-  #intro p {
-    margin-top: 0rem;
-    margin-left: 10rem;
-    font-size: 4rem;
-    padding-top: 0;
-    font-weight: bold;
-  }
-  
-  #note {
-    
-    width: auto;
-    background-color: aliceblue;
-    padding-bottom: 0px;
-    height: 35rem;
-    
-  }
-  
-  #note p {
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 0rem;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-  }
-  
-  .row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 3rem;
-    flex-wrap: wrap;
-  }
-  
-  .row * {
-      margin: 0 auto;
-    min-width: 300px;
-  }
-  
-  .row a {
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: bold;
-  }
-  
-  .row a:hover {
-    /* background-color: rgb(253, 226, 195); */
-    font-size: 3rem;
-    color: red;
-  }
-  
-  .block {
-    width: 30rem;
-    height: 10rem;
-    text-align: center;
-    line-height: 10rem;
-    font-size: 2rem;
-    color: black;
-    border-radius: 0.1rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-    animation: slideAnimation 2s ease-in-out 0s 1 both, colorChange 0s ease-in-out 1 both;
+}
+
+#note p {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.row * {
+    margin: 0 auto;
+  min-width: 300px;
+}
+
+.row a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.row a:hover {
+  /* background-color: rgb(253, 226, 195); */
+  font-size: 3rem;
+  color: red;
+}
+
+.block {
+  width: 30rem;
+  height: 10rem;
+  text-align: center;
+  line-height: 10rem;
+  font-size: 2rem;
+  color: black;
+  border-radius: 0.1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  animation: slideAnimation 2s ease-in-out 0s 1 both, colorChange 0s ease-in-out 1 both;
 }
 
 @keyframes slideAnimation {
-  from {
-    transform: translateX(500%);
-   
-  }
-  to {
-    transform: translateX(0);
-   
+from {
+  transform: translateX(500%);
+ 
+}
+to {
+  transform: translateX(0);
+ 
+}
+}
+
+@keyframes colorChange {
+from {
+  background-color: red;
+}
+to {
+  background-color: whitesmoke;
+}
+}
+
+/* Assign different background colors to each block /
+.block:nth-child(1) {
+  background-color: whitesmoke; / Blue */
+
+
+.block:nth-child(2) {
+  background-color: whitesmoke; /* Red */
+}
+
+.block:nth-child(3) {
+  background-color: whitesmoke; /* Green */
+}
+
+.block:nth-child(4) {
+  background-color: whitesmoke; /* Orange */
+}
+
+#why {
+  height: 20rem;
+  width: 100%;
+  margin-top: 1rem;
+  background-color: whitesmoke;
+}
+
+#why h2 {
+  margin-left: 9rem;
+  padding-top: 2rem;
+  font-size: 3rem;
+}
+
+#why p {
+  margin-left: 9rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+  padding-top: 0rem;
+}
+
+#why button {
+  height: 4rem;
+  width: 13rem;
+  background-color: whitesmoke;
+  margin-left: 9rem;
+}
+
+#why button a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+#why button a:hover {
+  color: red;
+  font-size: 2rem;
+}
+
+#footer {
+  background-color: whitesmoke;
+  height: 6rem;
+  margin-top: 1rem;
+  
+}
+#footer p {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+
+
+@media (max-width: 1104px) {
+  html {
+    font-size: 65%;
   }
 }
 
-  
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 947px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 690px) {
+  html {
+    font-size: 35%;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 25%;
+  }
+  .row a{
+      font-size: 13px;
+  }
+  .block {
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      animation: slideAnimationMobile 2s ease-in-out 1s 1 both;
+
+  }
  
-  
-  .block:nth-child(2) {
-    background-color: aliceblue; /* Red */
-  }
-  
-  .block:nth-child(3) {
-    background-color: aliceblue; /* Green */
-  }
-  
-  .block:nth-child(4) {
-    background-color: aliceblue; /* Orange */
-  }
-  
-  #why {
-    height: 20rem;
-    width: 100%;
-    /* margin-top: 1rem; */
-    background-color: aliceblue;
-    margin-bottom: -3rem;
-  }
-  
-  #why h2 {
-    margin-left: 9rem;
-    padding-top: 2rem;
-    font-size: 3rem;
-  }
-  
-  #why p {
-    margin-left: 9rem;
-    font-size: 2rem;
-    margin-top: 2rem;
-    padding-top: 0rem;
-  }
-  
-  #why button {
-    height: 4rem;
-    width: 13rem;
-    background-color: aliceblue;
-    margin-left: 9rem;
-  }
-  
-  #why button a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: black;
-  }
-  
-  #why button a:hover {
-    color: red;
-    font-size: 2rem;
-  }
-  
-  #footer {
-    background-color: aliceblue;
-    height: 6rem;
-    /* margin-top: -3rem; */
-    
-  }
-  #footer p {
-    color: black;
-    text-align: center;
-    font-weight: bold;
-    font-size: 2rem;
-    /* padding-top: 2rem; */
-  }
 
-  
-  
-  @media (max-width: 1104px) {
-    html {
-      font-size: 65%;
+  @keyframes slideAnimationMobile {
+    from {
+      transform: translateX(10%);
+    }
+    to {
+      transform: translateX(0);
     }
   }
-  
-  @media (max-width: 991px) {
-    html {
-      font-size: 55%;
-    }
+  #intro h3{
+    font-size: 8px;
   }
-  
-  @media (max-width: 947px) {
-    html {
-      font-size: 45%;
-    }
-  }
-  
-  @media (max-width: 690px) {
-    html {
-      font-size: 35%;
-    }
-  }
-  
-  @media (max-width: 500px) {
-    html {
-      font-size: 25%;
-    }
-    .row a{
-        font-size: 13px;
-    }
-    .block {
-        padding-bottom: 5px;
-        margin-bottom: 20px;
-        animation: slideAnimationMobile 2s ease-in-out 1s 1 both;
-
-    }
+  #why{
    
-  
-    @keyframes slideAnimationMobile {
-      from {
-        transform: translateX(10%);
-      }
-      to {
-        transform: translateX(0);
-      }
-    }
-    #why{
-     
-      height: 80px;
-    }
-    #note{
-      height: 520px;
-    }
-  
-    #why button {
-      height: auto; 
-      width: 20rem;/* Adjust as needed /
-    
-      width: auto; / Adjust as needed /
-      margin-left: 0; / Remove margin */
-    }
-  
-    #why button a {
-      font-size: 12px; /* Adjust as needed */
-    }
+    height: 80px;
   }
+  #note{
+    height: 520px;
+  }
+
+  #note p{
+    font-size: 15px;
+  }
+
+  #why button {
+    height: auto; 
+    width: 20rem;
+    margin-top: 1rem;/* Adjust as needed /
+    
+  
+    width: auto; / Adjust as needed /
+    margin-left: 0; / Remove margin */
+  }
+
+  #why button a {
+    font-size: 12px; /* Adjust as needed */
+  }
+  #why p{
+    font-size: 12px;
+  }
+
+}
