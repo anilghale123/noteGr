@@ -236,6 +236,10 @@ to {
   #why{
    
     height: 80px;
+   
+  }
+  #why p{
+    margin-bottom: 9px;
   }
   #note{
     height: 520px;
@@ -246,9 +250,12 @@ to {
   }
 
   #why button {
+    display: flex;
     height: auto; 
     width: 15rem;
-    margin-top: 3px;/* Adjust as needed /
+    flex-direction: column;
+    margin-top: -5px;
+    /* Adjust as needed /
     
   
     width: auto; / Adjust as needed /
