@@ -220,6 +220,9 @@ to {
 #intro{
   margin-top: -25px;
 }
+#intro p{
+  margin-bottom: 3px;
+}
  
 
   @keyframes slideAnimationMobile {
