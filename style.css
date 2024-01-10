@@ -242,7 +242,7 @@ to {
 
   #why button {
     height: auto; 
-    width: 20rem;
+    width: 15rem;
     margin-top: 1rem;/* Adjust as needed /
     
   
@@ -251,7 +251,7 @@ to {
   }
 
   #why button a {
-    font-size: 12px; /* Adjust as needed */
+    font-size: 10px; /* Adjust as needed */
   }
   #why p{
     font-size: 12px;
