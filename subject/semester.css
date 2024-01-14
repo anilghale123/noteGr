@@ -1,3 +1,5 @@
+
+
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -63,6 +65,74 @@ html{
     margin-left: 20rem;
     margin-right: 20rem;
 }
+
+
+#theme-toggle{
+  float: right;
+  
+}
+/* 
+.dark-mode {
+--background-color: black;
+--text-color: white;
+--div-color: black;
+}
+
+.dark-mode header #nav-placeholder{
+  background-color: #111;
+}
+
+.dark-mode header .navbar .max-width{
+  background-color: #111;
+}
+
+.dark-mode header .navbar .max-width .menu{
+  background-color: #111;
+  }
+
+.dark-mode header .navbar .max-width .menu a{
+  color: white;
+  }
+
+.dark-mode header .navbar .max-width  .menu-btn{
+  color: white;
+}
+
+.dark-mode header .navbar a{
+  color: white;
+} 
+
+.dark-mode footer{
+  background-color: #222;
+  color: white;
+}
+
+.dark-mode footer svg{
+  background-color: white;
+  color: white;
+}
+.dark-mode footer p{
+  color: white;
+}
+
+
+.dark-mode #subjects{
+  background-color: black;
+  color: white;
+}
+
+.dark-mode #subjects .block {
+  background-color :#222 !important;
+  color: white;
+  
+} */
+
+
+/* 
+main div {
+background-color: var(--div-color);
+} */
+
 
 
 @media screen and (min-width: 500px) and (max-width: 1500px) {

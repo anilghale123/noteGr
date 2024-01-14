@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="../subject/semester.css">
+   <!-- In your index.html -->
+
+
     <title>Document</title>
 </head>
 <style>
@@ -39,6 +42,8 @@ footer p {
    font-size: 14px;
    color: #6c757d;
 }
+
+
     
 </style>
 <body>
@@ -46,6 +51,8 @@ footer p {
     </header>
     <div id="nav-placeholder"></div> 
     <header>
+
+        <!-- <button id="theme-toggle">Dark Mode</button> -->
 
         <main>
     <div id="subjects">
@@ -105,6 +112,11 @@ footer p {
             script.onload = callback;
             document.body.appendChild(script);
         }
+
+        document.getElementById('theme-toggle').addEventListener('click', function() {
+   document.body.classList.toggle('dark-mode');
+});
+
         
             </script>
       
