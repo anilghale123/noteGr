@@ -1,7 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
- <url>
-    <loc>https://www.notesgriha.com/foo.html</loc>
-    <lastmod>2022-06-04</lastmod>
- </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://notesgriha.com/</loc>
+  <lastmod>2024-02-01T15:46:40+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://notesgriha.com/bitFirst/firstSem.html</loc>
+  <lastmod>2024-02-01T15:46:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://notesgriha.com/bitSecond/secondSem.html</loc>
+  <lastmod>2024-02-01T15:46:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://notesgriha.com/bitThird/thirdSem.html</loc>
+  <lastmod>2024-02-01T15:46:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://notesgriha.com/bitFourth/fourthSem.html</loc>
+  <lastmod>2024-02-01T15:46:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://notesgriha.com/subject/fifthsem.html</loc>
+  <lastmod>2024-02-01T15:46:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://notesgriha.com/bitSixth/sixthSem.html</loc>
+  <lastmod>2024-02-01T15:46:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://notesgriha.com/bitSeventh/seventhSem.html</loc>
+  <lastmod>2024-02-01T15:46:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://notesgriha.com/bitEight/eightSem.html</loc>
+  <lastmod>2024-02-01T15:46:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://notesgriha.com/contribute.html</loc>
+  <lastmod>2024-02-01T15:46:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://notesgriha.com/bitFirst/foit.html</loc>
+  <lastmod>2024-02-01T15:46:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notesgriha.com/bitFirst/mathI.html</loc>
+  <lastmod>2024-02-01T15:46:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notesgriha.com/bitFirst/technicalCommunication.html</loc>
+  <lastmod>2024-02-01T15:46:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notesgriha.com/bitFirst/seit.html</loc>
+  <lastmod>2024-02-01T15:46:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notesgriha.com/bitFirst/cProgramming.html</loc>
+  <lastmod>2024-02-01T15:46:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notesgriha.com/subject/iot.html</loc>
+  <lastmod>2024-02-01T15:46:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notesgriha.com/subject/computerGraphics.html</loc>
+  <lastmod>2024-02-01T15:46:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notesgriha.com/subject/webTech.html</loc>
+  <lastmod>2024-02-01T15:46:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notesgriha.com/subject/researchMethodology.html</loc>
+  <lastmod>2024-02-01T15:46:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notesgriha.com/subject/computerNetwork.html</loc>
+  <lastmod>2024-02-01T15:46:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://notesgriha.com/navBar/subNav.html</loc>
+  <lastmod>2024-02-01T15:46:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
 </urlset>
