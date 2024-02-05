@@ -9,28 +9,42 @@ body {
  
   height: 100vh; /* Set body height to 100% of the viewport height */
 }
+#nav-placeholder{
+  margin-bottom:-25px;
+}
+ 
 #intro {
+  display: flex;
+  align-items: center;
   height: 21rem;
-  width: auto;
+  width: 100%;
   background-color: whitesmoke;
   margin-bottom: 5px;
-  margin-top: -25px;
- 
+  margin-top: 0;
+  /* flex-wrap: wrap; */
+  
+}
+
+#intro img {
+  margin-right: 200px;
+  margin-top: 1px;
+}
+
+#intro .content {
+  flex: 1;
+  margin: 110px;
 }
 
 #intro h3 {
-  margin-left: 10rem;
-  padding-top: 3rem;
   color: black;
 }
 
 #intro p {
   margin-top: 0rem;
-  margin-left: 10rem;
   font-size: 4rem;
-  padding-top: 0;
   font-weight: bold;
 }
+
 
 #note {
   
@@ -205,6 +219,11 @@ to {
 }
 
 @media (max-width: 500px) {
+  body{
+    overflow-x: hidden;
+    margin: 0;
+  }
+  
   html {
     font-size: 25%;
   }
@@ -217,13 +236,7 @@ to {
       animation: slideAnimationMobile 2s ease-in-out 1s 1 both;
 
   }
-#intro{
-  margin-top: -25px;
-}
-#intro p{
-  margin-bottom: 3px;
-}
- 
+  
 
   @keyframes slideAnimationMobile {
     from {
@@ -233,9 +246,35 @@ to {
       transform: translateX(0);
     }
   }
-  #intro h3{
-    font-size: 8px;
+
+  #intro {
+    display: flex;
   }
+  
+  #intro img {
+    flex: 0 0 auto; /* Allow the image to shrink and grow as needed */
+    /* max-width: 300px; Set a maximum width to prevent stretching */
+    height: 70px; /* Maintain aspect ratio */
+
+  }
+   #theme-toggle{
+   
+  }
+  #intro .content {
+    
+    /* flex-direction: column; Stack child elements vertically */
+    margin-left: 15px;
+    padding-top: 10px;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-top: 150px; */
+    white-space: nowrap;
+}
+
+#intro .content h3{
+
+}
+
   #why{
    
     height: 80px;
