@@ -2,89 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Upload Form</title>
-   <style>
-    body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.upload-form {
-    text-align: center;
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-body {
-   padding: 25px;
-   background-color: white;
-   color: black;
-   font-size: 25px;
-}
-
-.dark-mode {
-   background-color: black;
-   color: white;
-}
-
-   </style>
+    <title>Document</title>
+   
 </head>
+<style>
+    
+</style>
 <body>
 
-    <div class="upload-form">
-        <h1>File Upload Form</h1>
-        <form id="fileUploadForm">
-            <label for="fileInput">Choose a file:</label>
-            <input type="file" id="fileInput" name="file" accept=".txt, .pdf, .docx">
-            <button type="button" onclick="uploadFile()">Upload</button>
-        </form>
-    </div>
+    <input type="file" accept="image/*,.pdf">
+
+    <img src="" alt=""> <br> <br>
+   
+    <form method="post" action="https://script.google.com/macros/s/AKfycbwig4r8bnCyJDxrC3FWpH6h2OrkJiE5fN9RSNA6tA7AxS7r8GrbmzctkLSa0Zpzcpz7/exec"  onsubmit="submitForm(event)">
+        <div class="fields">
+            <div class="field name">
+                <input type="text" name="name" placeholder="Name" required>
+            </div>
+            <div class="field email">
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+        </div>
+        <div class="field">
+            <input type="text" name="subject" placeholder="Subject" required>
+        </div>
+        <div class="field textarea">
+            <textarea name="message" cols="30" rows="10" placeholder="Message.." required></textarea>
+        </div>
+        <div class="button-area">
+            <button type="submit">Send message</button>
+        </div>
+    </form>
 
 
-    <button  style="background-color: green; margin-bottom: 700px; margin-left: 700px;" onclick="darkMode()">Dark Mode</button>
 
 
-   <script>
-    function uploadFile() {
-    var fileInput = document.getElementById('fileInput');
-    var file = fileInput.files[0];
 
-    if (file) {
-        // Here, you would typically send the file to the server using an XMLHttpRequest or Fetch API.
-        // For this example, we'll just log the file details.
-        console.log('File selected:', file.name, file.size, file.type);
-    } else {
-        alert('Please choose a file before uploading.');
-    }
+<script>
+    function submitForm(event) {
+    event.preventDefault();
+
+    const form = event.target;
+    const formData = new FormData(form);
+
+    // Make an HTTP request to the Google Apps Script web app
+    fetch(form.action, {
+        method: 'POST',
+        body: formData,
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(data => {
+        alert(data.result === 'success' ? 'Your Message Submmited successfully' : 'Error adding data');
+        form.reset();
+    })
+    .catch(error => console.error('Error!', error.message));
 }
 
-function darkMode() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
 
-
-   </script>
+ // This line declares a variable called "url" and assigns it a value of "Api_Endpoint_Url"
+ let url = "https://script.google.com/macros/s/AKfycbx_bv1cBjqOTCxYq5oLnc-2uRyfJXHdOneXZ2vloeRwdINoRWp748-0UFou9vkVHdsC/exec";
+    // This line declares a variable called "file" and assigns it the value of the first input element on the page
+    let file = document.querySelector("input");
+    // This line declares a variable called "img" and assigns it the value of the first image element on the page
+    let img = document.querySelector("img");
+    // This line adds an event listener to the "change" event of the "file" input element
+    file.addEventListener('change',()=>{
+        // This line creates a new FileReader object called "fr"
+        let fr = new FileReader();
+        // This line adds an event listener to the "loadend" event of the FileReader object
+        fr.addEventListener('loadend',()=>{
+            // This line declares a variable called "res" and assigns it the result of the FileReader object
+            let res = fr.result;
+            // This line sets the "src" attribute of the "img" element to the value of "res"
+            img.src=res;
+            // This line splits the "res" variable into an array, using the string "base64," as the separator, and assigns the second element to a variable called "spt"
+            let spt = res.split("base64,")[1];
+            // This line creates an object called "obj" with three properties: "base64", "type", and "name"
+            let obj = {
+                base64:spt,
+                type:file.files[0].type,
+                name:file.files[0].name
+            }
+            // This line sends a POST request to the URL specified in the "url" variable, with the "obj" object as the request body
+            fetch(url,{
+                method:"POST",
+                body:JSON.stringify(obj)
+            })
+            // This line waits for the response from the server and converts it to text
+            .then(r=>r.text())
+            // This line logs the response data to the console
+            .then(data=>console.log(data))
+ 
+        })
+        // This line reads the selected file as a data URL
+        fr.readAsDataURL(file.files[0])
+    })
+</script>
 </body>
 </html>
