@@ -100,7 +100,7 @@ body {
   animation: slideAnimation 2s ease-in-out 0s 1 both, colorChange 0s ease-in-out 1 both;
 }
 
-@keyframes slideAnimation {
+/* @keyframes slideAnimation {
 from {
   transform: translateX(500%);
  
@@ -109,7 +109,7 @@ to {
   transform: translateX(0);
  
 }
-}
+} */
 
 @keyframes colorChange {
 from {
