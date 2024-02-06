@@ -163,7 +163,7 @@ main div {
 
             <div class="content">
                 <h3>START TO NEW JOURNEY</h3>
-                <p>Best Learning <br>Platform To Prepare <br>Semester Exam</p>
+                <p>Best Learning <br>Platform To Prepare <br><span class="typing-exam"></p>
             </div>
             <img src="images/reading.png" height="180px" alt="">
 
@@ -215,6 +215,7 @@ main div {
      </footer>
      
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <script>
        
@@ -242,7 +243,14 @@ document.getElementById('theme-toggle').addEventListener('click', function() {
 
 
     </script>
-
+<script>
+     var typedExam = new Typed(".typing-exam", {
+        strings: ["NEB Exam", "Semester Exam", "Board Exam"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+</script>
 <script src="./navBar/navScript.js"></script>
 
 <script type="application/ld+json">
@@ -258,6 +266,8 @@ document.getElementById('theme-toggle').addEventListener('click', function() {
         "contactType": "Customer service"
      }
     }
+
+
     </script>
     
 
