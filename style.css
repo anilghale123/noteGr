@@ -97,28 +97,9 @@ body {
   color: black;
   border-radius: 0.1rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-  animation: slideAnimation 2s ease-in-out 0s 1 both, colorChange 0s ease-in-out 1 both;
 }
 
-/* @keyframes slideAnimation {
-from {
-  transform: translateX(500%);
- 
-}
-to {
-  transform: translateX(0);
- 
-}
-} */
 
-@keyframes colorChange {
-from {
-  background-color: red;
-}
-to {
-  background-color: whitesmoke;
-}
-}
 
 /* Assign different background colors to each block /
 .block:nth-child(1) {
