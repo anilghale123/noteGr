@@ -2,27 +2,26 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
 html {
   font-size: 62.5%;
 }
+
 body {
- 
-  height: 100vh; /* Set body height to 100% of the viewport height */
+  height: 100vh;
 }
-#nav-placeholder{
-  margin-bottom:-25px;
+
+#nav-placeholder {
+  margin-bottom: -35px;
 }
- 
+
 #intro {
   display: flex;
   align-items: center;
   height: 21rem;
   width: 100%;
-  background-color: whitesmoke;
+  background-color: aliceblue;
   margin-bottom: 5px;
-  margin-top: 0;
-  /* flex-wrap: wrap; */
-  
 }
 
 #intro img {
@@ -37,26 +36,28 @@ body {
 
 #intro h3 {
   color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 #intro p {
   margin-top: 0rem;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
 }
 
-
 #note {
-  
   width: auto;
   background-color: aliceblue;
   padding-bottom: 0px;
-  height: 35rem;
-  
+  height: 25rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 #note p {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
   margin-top: 0rem;
@@ -67,12 +68,13 @@ body {
 .row {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .row * {
-    margin: 0 auto;
+  margin: 0 auto;
   min-width: 300px;
 }
 
@@ -80,71 +82,64 @@ body {
   text-decoration: none;
   font-size: 2rem;
   font-weight: bold;
+  padding: 1.5rem;
 }
 
 .row a:hover {
-  /* background-color: rgb(253, 226, 195); */
-  font-size: 3rem;
   color: red;
 }
 
 .block {
-  width: 30rem;
-  height: 10rem;
   text-align: center;
-  line-height: 10rem;
   font-size: 2rem;
   color: black;
   border-radius: 0.1rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 
-
-
-/* Assign different background colors to each block /
-.block:nth-child(1) {
-  background-color: whitesmoke; / Blue */
-
-
 .block:nth-child(2) {
-  background-color: whitesmoke; /* Red */
+  background-color: aliceblue; /* Red */
 }
 
 .block:nth-child(3) {
-  background-color: whitesmoke; /* Green */
+  background-color: aliceblue; /* Green */
 }
 
 .block:nth-child(4) {
-  background-color: whitesmoke; /* Orange */
+  background-color: aliceblue; /* Orange */
 }
 
 #why {
   height: 20rem;
   width: 100%;
-  margin-top:5px;
-  background-color: whitesmoke;
+  margin-top: 5px;
+  background-color: aliceblue;
   margin-bottom: -5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 #why h2 {
   margin-left: 9rem;
   padding-top: 2rem;
-  font-size: 3rem;
+  font-size: 2.4rem;
 }
 
 #why p {
   margin-left: 9rem;
   font-size: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding-top: 0rem;
 }
 
 #why button {
   height: 4rem;
   width: 13rem;
-  background-color: whitesmoke;
+  background-color: aliceblue;
   margin-left: 9rem;
   margin-top: 2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 #why button a {
@@ -156,15 +151,13 @@ body {
 
 #why button a:hover {
   color: red;
-  font-size: 2rem;
 }
 
 #footer {
   background-color: whitesmoke;
   height: 6rem;
-  
-  
 }
+
 #footer p {
   color: black;
   text-align: center;
@@ -173,124 +166,175 @@ body {
   padding-top: 2rem;
 }
 
+@media screen and (min-width: 1501px) {
+  html {
+    font-size: 62.5%;
+  }
+}
 
-
-@media screen and (min-width: 500px) and (max-width: 1500px) {
+@media screen and (min-width: 1024px) and (max-width: 1500px) {
   html {
     font-size: 70%;
   }
-.dark-mode header .navbar{
-  background-color: black;
-  border-bottom: 4px solid white;
+  #note {
+    height: 40rem;
+    display: flex;
+    gap: 10px;
+    padding: 1rem;
+    flex-direction: column;
+  }
+  #row-flex {
+    display: flex;
+    gap: 10rem;
+    margin-left: 13rem;
+  }
 
+  .row {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
-}
 
-
-@media (max-width: 947px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   html {
-    font-size: 45%;
-  }
-}
-
-@media (max-width: 690px) {
-  html {
-    font-size: 35%;
-  }
-}
-
-@media (max-width: 500px) {
-  body{
-    overflow-x: hidden;
-    margin: 0;
-  }
-  
-  html {
-    font-size: 25%;
-  }
-  .row a{
-      font-size: 13px;
-  }
-  .block {
-      padding-bottom: 5px;
-      margin-bottom: 20px;
-      animation: slideAnimationMobile 2s ease-in-out 1s 1 both;
-
-  }
-  
-
-  @keyframes slideAnimationMobile {
-    from {
-      transform: translateX(10%);
-    }
-    to {
-      transform: translateX(0);
-    }
+    font-size: 55%;
   }
 
   #intro {
-    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 2rem;
   }
-  
+
   #intro img {
-    flex: 0 0 auto; /* Allow the image to shrink and grow as needed */
-    /* max-width: 300px; Set a maximum width to prevent stretching */
-    height: 70px; /* Maintain aspect ratio */
+    margin-right: 0;
+    margin-bottom: 2rem;
+    width: 24%;
+    /* height: 1rem; */
+  }
 
-  }
-   #theme-toggle{
-   
-  }
   #intro .content {
-    
-    /* flex-direction: column; Stack child elements vertically */
-    margin-left: 15px;
-    padding-top: 10px;
-    justify-content: space-around;
-    align-items: center;
-    /* margin-top: 150px; */
-    white-space: nowrap;
-}
-
-#intro .content h3{
-
-}
-
-  #why{
-   
-    height: 80px;
-   
+    margin: 0;
   }
-  #why p{
-    margin-top: -1px;
-    margin-bottom: 10px;
+  #note {
+    height: 45rem;
+    display: flex;
+    gap: 10px;
+    padding: 1rem;
+    flex-direction: column;
   }
-  #note{
-    height: 520px;
+  #row-flex {
+    display: flex;
+    gap: 10rem;
+    margin-left: 6%;
   }
 
-  #note p{
-    font-size: 15px;
+  .row {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #why h2,
+  #why p {
+    margin-left: 2rem;
   }
 
   #why button {
-    display: flex;
-    height: auto; 
-    width: 15rem;
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 45%;
+  }
+
+  #intro {
     flex-direction: column;
-    margin-top: -5px;
-    /* Adjust as needed /
-    
-  
-    width: auto; / Adjust as needed /
-    margin-left: 0; / Remove margin */
+    text-align: center;
+    height: auto;
+    padding: 2rem;
   }
 
-  #why button a {
-    font-size: 10px; /* Adjust as needed */
-  }
-  #why p{
-    font-size: 12px;
+  #intro img {
+    margin-right: 0;
+    margin-bottom: 2rem;
+    width: 70%;
+    height: auto;
   }
 
+  #intro .content {
+    margin: 0;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  #why h2,
+  #why p {
+    margin-left: 2rem;
+  }
+
+  #why button {
+    margin-left: 2rem;
+  }
+
+  #note {
+    height: auto;
+    padding: 2rem;
+  }
+
+  #note p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 542px) {
+  html {
+    font-size: 35%;
+  }
+
+  #intro img {
+    width: 20%;
+    height: auto;
+  }
+
+  #intro .content {
+    margin: 0;
+  }
+
+  #note {
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+  }
+  #semester-note p {
+    font-size: 3rem !important;
+  }
+  #row-flex {
+    display: flex;
+    gap: 10rem;
+    margin-left: 4rem;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 1rem;
+    /* width: 1rem !important; */
+  }
+  .row * {
+    margin: 0 auto;
+    min-width: 130px;
+  }
+
+  #note {
+    height: auto;
+    padding: 1rem;
+  }
+
+  #note p {
+    font-size: 1.5rem;
+  }
 }
